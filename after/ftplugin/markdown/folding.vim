@@ -105,6 +105,7 @@ if !exists('g:markdown_fold_override_foldtext')
 endif
 
 setlocal foldmethod=expr
+setlocal foldlevel=20
 
 if g:markdown_fold_override_foldtext
   let &l:foldtext = s:SID() . 'FoldText()'
